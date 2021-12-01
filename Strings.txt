@@ -1,0 +1,54 @@
+//Printing a string
+#include <stdio.h>
+int main ()
+{
+    char s[]= "Rajesh Rock";
+    printf("%s", s);
+    return 0;
+}
+
+#include <stdio.h>
+int main ()
+{
+    char s[50];
+    scanf("%s",s);
+    printf("%s", s);
+    return 0;
+}
+
+
+// Passing String to a Function
+#include <stdio.h>
+void prints(char s[])
+{
+    printf("%s",s);
+    return;
+}
+int main ()
+{
+    char s[]="Days without you";
+ 
+    prints(s);
+    return 0;
+}
+
+
+// String copy
+#include <stdio.h>
+int main()
+{
+    char s[6]="Hulko";
+    char p[6];
+    int i;
+    for( i=0; s[i] != '\0'; i++)
+    {
+        p[i]=s[i];
+    }
+    p[i]='\0';
+    printf("%S", p);
+    return 0;
+}
+
+
+
+
